@@ -6,8 +6,12 @@ edition = "2024"
 [dependencies]
 clap = { version = "4.5.60", features = ["derive"] }
 colorous = "1.0.16"
+hdf5 = { path = "./hdf5-rust/hdf5", package = "hdf5-metno" }
 image = { version = "0.25.9", default-features = false, features = ["png"] }
+indicatif = "0.18.4"
 nalgebra = "0.34.1"
+ndarray = { version = "0.17.2", features = ["blas", "rayon"] }
+num-integer = "0.1.46"
 rug = { version = "1.28.1", features = ["float", "num-traits"], default-features = false }
 ruviz = "0.1.4"
 serde = { version = "1.0.228", features = ["derive"] }
